@@ -31,7 +31,11 @@
 	"dependencies": {
 		"@fontsource/fira-mono": "^4.2.2",
 		"@lukeed/uuid": "^2.0.0",
-		"cookie": "^0.4.1"
+		"@sveltejs/adapter-node": "^1.0.0-next.22",
+		"@sveltejs/adapter-static": "^1.0.0-next.11",
+		"cookie": "^0.4.1",
+		"gridjs": "^4.0.0",
+		"gridjs-svelte": "^1.0.0"
 	},
 	"description": "Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);",
 	"main": "svelte.config.js",

@@ -1,18 +1,16 @@
-
-<section>
-
-	Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum possimus consectetur inventore animi sint hic, quos illum quae doloremque cum recusandae, asperiores quas suscipit voluptas? Repellat nihil dignissimos ducimus cumque!
-</section>
-
 <script>
-	// your script goes here
+	import Gridjs from 'gridjs-svelte';
+
+	import Grid from 'gridjs-svelte';
+	import { onMount } from 'svelte';
+	let data = [];
+	
+
+	const columns = ['name', 'url', 'details'];
 </script>
 
-<style>
-	section{
-		@apply bg-purple-200;
-	}
-	/* your styles go here */
-</style>
+<Grid {data} {columns} />
 
-<!-- markup (zero or more items) goes here -->
+<style global>
+	@import 'https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css';
+</style>
