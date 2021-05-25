@@ -1,4 +1,4 @@
-const posts = [
+export const posts = [
   {
     "_id": {
       "$oid": "609b4271adf71824e487efbf"
