@@ -18,6 +18,14 @@
 								</ion-item>
 							</a>
 						</ion-menu-toggle>
+						<ion-menu-toggle auto-hide="false">
+							<a href="/board">
+								<ion-item>
+									<ion-icon name="globe" slot="start"></ion-icon>
+									<ion-label>Globe</ion-label>
+								</ion-item>
+							</a>
+						</ion-menu-toggle>
 					</ion-list>
 				</ion-content>
 			</ion-menu>
@@ -35,7 +43,7 @@
 						<ion-title>🚀</ion-title>
 					</ion-toolbar>
 				</ion-header>
-				<ion-content class="ion-padding">
+				<ion-content>
 					<slot><!-- optional fallback --></slot>
 				</ion-content>
 			</div>
