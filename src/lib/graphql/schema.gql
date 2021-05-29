@@ -1,0 +1,48 @@
+interface MutationResponse {
+  code: String!
+  success: Boolean!
+  message: String!
+}
+# A book has a title and an author
+type Blog {
+	id: ID!
+	title: String!
+	site: String!
+	details: String!
+	visitorcount: Int!
+	likes: [User]
+	author: User
+}
+
+type User {
+	id: ID!
+	name: String
+	uuid: String!
+	blogs: [Blog]
+}
+input PostAndMediaInput {
+	title: String
+	body: String
+	mediaUrls: [String]
+}
+
+type LikePostMutationResponse implements MutationResponse {
+  code: String!
+  success: Boolean!
+  message: String!
+  post: Post
+  user: User
+}
+
+
+
+type Query {
+	users: [User]
+	blogs: [Blog]
+}
+
+type Mutation {
+	createBlog(title: String, author: String): Blog
+	createPost(post: PostAndMediaInput): Post
+}
+
